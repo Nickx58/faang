@@ -26,3 +26,24 @@ int main() {
         cout<<"Element found at index: "<<result<<endl;
     }
 }
+
+/*
+1. binarySearch(0, 6)
+   → mid = 3 → arr[3] = 7 < 9 → search right
+   → returns binarySearch(4, 6)
+
+2. binarySearch(4, 6)
+   → mid = 5 → arr[5] = 11 > 9 → search left
+   → returns binarySearch(4, 4)
+
+3. binarySearch(4, 4)
+   → mid = 4 → arr[4] = 9 → FOUND → return 4
+
+Now unwinding...
+
+binarySearch(4, 4) returns **4** to
+binarySearch(4, 6), which returns **4** to
+binarySearch(0, 6), which returns **4** to main
+*/
+
+
