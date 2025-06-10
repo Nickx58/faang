@@ -35,8 +35,8 @@ void printList(Node* head) {
 }
 
 Node* deleteAtEnd(Node* head) {
-    if(head == nullptr) {
-        return head;
+    if(head == NULL || head->next == NULL) {
+        return NULL;
     }
     Node* temp = head;
     while(temp->next->next != nullptr) {
