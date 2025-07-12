@@ -9,3 +9,5 @@ I will work hard to achieve my goals. I want to become a best in the industry fo
 Mind is everything
 
 Do all easy question on geeksforgeek and leetcode.
+
+I have started well. But failing in rythm.
