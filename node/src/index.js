@@ -1,10 +1,5 @@
-const http = require("http");
+const app = require("./server");
 
-const server = http.createServer(async (req, res) => {
-  if (req.method === "GET" && req.url === "/") {
-    console.log("Hi From server");
-    res.end();
-  }
+app.listen("3001", () => {
+  console.log("App is listening on port 3001");
 });
-
-server.listen(3001, () => console.log("Server is listening on port 3001"));
