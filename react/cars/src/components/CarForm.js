@@ -1,5 +1,29 @@
+import { useDispatch, useSelector } from "react-redux";
+import { changeName } from "../store";
+
 function CarForm() {
-  return <div>Car Form</div>;
+  const dispatch = useDispatch();
+  const name = useSelector((state) => state.form.name);
+  const handleOnNameChange = (event) => {
+    dispatch(changeName(event.target.value));
+  };
+  return (
+    <div className="car-form panel">
+      <h4 className="subtitle is-3">Add Car</h4>
+      <form>
+        <div className="field-group">
+          <div className="field">
+            <label className="label">className</label>
+            <input
+              className="input is-expanded"
+              value={name}
+              onChange={handleOnNameChange}
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  );
 }
 
 export default CarForm;
