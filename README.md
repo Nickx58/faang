@@ -19,3 +19,9 @@ I kept silent all the time in shame, But I will speak. The best way to answer is
 They all are watching me. They all are laughing at me. I have to speak for myself.
 
 I will answer them shortly.
+
+1st Aug 2025, I have started my timer. I think I have 8 months in total anything above 8 months will be the gold for me.
+I'm doing one commitment with me, I will give my 100%. This is the last dance or last chance. I will make sure I left no stone overturned this time.
+Everyone said to me I cannot code and I will prove them wrong. I can do this.
+
+Let's go.... Nisha Mumma this efforts is for you.
