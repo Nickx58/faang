@@ -25,3 +25,8 @@ I'm doing one commitment with me, I will give my 100%. This is the last dance or
 Everyone said to me I cannot code and I will prove them wrong. I can do this.
 
 Let's go.... Nisha Mumma this efforts is for you.
+
+Artifacts Links
+https://claude.ai/public/artifacts/3e240de5-0888-47b9-97bc-6c29ab7f4248
+
+https://claude.ai/public/artifacts/9be02c9d-1ebf-4a79-98af-b00fff8cdb13
