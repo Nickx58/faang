@@ -15,3 +15,8 @@ int main()
     }
     cout << res;
 }
+
+/*
+    Count the digit.
+    if you divide the number by 10 you will remove the last digit. while removing the last digit count the number of operation until number become 0
+*/
