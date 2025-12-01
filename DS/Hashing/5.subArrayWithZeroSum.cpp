@@ -35,6 +35,8 @@ int main()
 
 // O(n2) solution
 
+// o(n) with prefix and hashing
+
 #include <bits/stdc++.h>
 using namespace std;
 
