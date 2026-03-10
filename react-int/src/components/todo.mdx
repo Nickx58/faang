@@ -1,0 +1,112 @@
+Learning from the App
+
+      <label htmlFor="Add Task">
+        Add Task:{" "}
+        <input
+          value={value}
+          onKeyDown={handleKeyDown}
+          type="text"
+          name="Add Task"
+          onChange={handleAddTask}
+        />
+      </label>
+
+// Add Object in the array of object in state different ways
+
+const users = [
+{ id: 1, name: "John" },
+{ id: 2, name: "Mike" }
+];
+
+const newUser = { id: 3, name: "Sara" };
+
+const updatedUsers = [...users, newUser];
+
+console.log(updatedUsers);
+
+3️⃣ React State Example (Most Important)
+
+In React you should never mutate state directly.
+
+const [users, setUsers] = useState([
+{ id: 1, name: "John" },
+{ id: 2, name: "Mike" }
+]);
+
+function addUser() {
+const newUser = { id: 3, name: "Sara" };
+
+setUsers(prev => [...prev, newUser]);
+}
+
+Key point:
+
+setUsers(prev => [...prev, newUser])
+
+Senior React Interview Tip 💡
+
+Interviewers often ask:
+
+Why is this wrong in React?
+
+users.push(newUser);
+setUsers(users);
+
+Answer:
+
+It mutates state
+
+React may not detect the change
+
+Can cause unexpected rendering bugs
+
+Correct approach:
+
+setUsers(prev => [...prev, newUser]);
+
+// how to update the property of array of object
+
+const updatedUsers = users.map(user =>
+user.id === 2 ? { ...user, age: 31 } : user
+);
+
+console.log(updatedUsers);
+
+2️⃣ React State Example (Important)
+const [users, setUsers] = useState([
+{ id: 1, name: "John", age: 25 },
+{ id: 2, name: "Mike", age: 30 }
+]);
+
+function updateUser() {
+setUsers(prev =>
+prev.map(user =>
+user.id === 2 ? { ...user, age: 31 } : user
+)
+);
+}
+
+Key idea:
+
+{ ...user, age: 31 }
+
+3️⃣ Update Multiple Properties
+const updatedUsers = users.map(user =>
+user.id === 1
+? { ...user, name: "Johnny", age: 26 }
+: user
+);
+
+Senior React Interview Tip 💡
+
+Interviewers often ask:
+
+Why use map() instead of forEach()?
+
+Answer:
+
+map() returns a new array
+
+Keeps immutability
+
+React can detect state changes
