@@ -1,0 +1,20 @@
+.tabs-list {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-trigger {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background: #eee;
+}
+
+.tab-trigger.active {
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+}
+
+.tab-content {
+    margin-top: 16px;
+}
