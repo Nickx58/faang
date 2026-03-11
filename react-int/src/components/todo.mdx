@@ -110,3 +110,66 @@ map() returns a new array
 Keeps immutability
 
 React can detect state changes
+
+1️⃣ Toggle Boolean Value in Array of Objects
+Example Data
+const todos = [
+  { id: 1, task: "Learn React", completed: false },
+  { id: 2, task: "Practice DSA", completed: true }
+];
+Toggle completed for id = 1
+const updatedTodos = todos.map(todo =>
+  todo.id === 1
+    ? { ...todo, completed: !todo.completed }
+    : todo
+);
+
+React State Example
+const [todos, setTodos] = useState([
+  { id: 1, task: "Learn React", completed: false },
+  { id: 2, task: "Practice DSA", completed: true }
+]);
+
+function toggleTodo(id) {
+  setTodos(prev =>
+    prev.map(todo =>
+      todo.id === id
+        ? { ...todo, completed: !todo.completed }
+        : todo
+    )
+  );
+}
+
+update nested object
+
+const updatedUsers = users.map(user =>
+  user.id === 1
+    ? {
+        ...user,
+        address: {
+          ...user.address,
+          city: "Bangalore"
+        }
+      }
+    : user
+);
+
+setUsers(prev =>
+  prev.map(user =>
+    user.id === 1
+      ? {
+          ...user,
+          address: {
+            ...user.address,
+            city: "Bangalore"
+          }
+        }
+      : user
+  )
+);
+
+Pattern:
+
+array.map()
+   -> spread object
+        -> spread nested object

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 const defaultTask = [
   {
@@ -13,7 +13,7 @@ const Todo = () => {
   const [value, setValue] = useState("");
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && value.length) {
       const newTasks = {
         id: Date.now(),
         isCompleted: false,
@@ -41,10 +41,18 @@ const Todo = () => {
     );
   };
 
+  const getCompletedTasks = useMemo(() => {
+    const completedTasks = tasks.filter(
+      (task) => task.isCompleted === true,
+    ).length;
+    return completedTasks;
+  }, [tasks]);
+
   return (
     <div>
       <h1>Todo</h1>
       <h2>Number of tasks: {tasks.length}</h2>
+      <h2>Number of Completed Tasks: {getCompletedTasks}</h2>
       <label htmlFor="Add Task">
         Add Task:{" "}
         <input
