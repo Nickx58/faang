@@ -1,4 +1,5 @@
 import Todo from "./components/Todo/Todo";
+import Pagination from "./components/Pagination/Pagination";
 import Tabs from "./components/Tab";
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
         <Tabs.Content value="tab1">
           <Todo />
         </Tabs.Content>
-        <Tabs.Content value="tab2">Content 2</Tabs.Content>
+        <Tabs.Content value="tab2">
+          <Pagination />
+        </Tabs.Content>
       </Tabs>
     </>
   );
