@@ -1,0 +1,20 @@
+.chips-add-btn {
+    margin: 5px;
+}
+
+.chips-container {
+    padding: 5px;
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    background: #018786;
+    color: whitesmoke;
+    display: inline-block;
+    margin: 5px;
+}
+
+.chips-remove-btn {
+    float: right;
+    border: none;
+}
