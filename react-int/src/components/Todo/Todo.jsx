@@ -1,12 +1,5 @@
 import { useMemo, useState } from "react";
-
-const defaultTask = [
-  {
-    id: Date.now(),
-    isCompleted: false,
-    text: "Learn React",
-  },
-];
+import { defaultTask } from "../constants";
 
 const Todo = () => {
   const [tasks, setTasks] = useState(defaultTask);
