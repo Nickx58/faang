@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useFetch from "../../hooks/useFetch";
+import useFetch from "../../hooks/useFetch/useFetch";
 
 const URL = "https://dummyjson.com/users";
 

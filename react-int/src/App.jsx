@@ -5,6 +5,7 @@ import Accordion from "./components/Accordion/Accordion";
 import Chips from "./components/Chips/Chips";
 import Quiz from "./components/Quiz/Quiz";
 import TrafficLight from "./components/TrafficLight/TrafficLight";
+import ToastContainer from "./components/Toast/Toast";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Tabs.Trigger value="tab4">Chips</Tabs.Trigger>
           <Tabs.Trigger value="tab5">Quiz</Tabs.Trigger>
           <Tabs.Trigger value="tab6">Traffic Light</Tabs.Trigger>
+          <Tabs.Trigger value="tab7">Toast</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="tab1">
           <Todo />
@@ -35,6 +37,9 @@ function App() {
         </Tabs.Content>
         <Tabs.Content value="tab6">
           <TrafficLight />
+        </Tabs.Content>
+        <Tabs.Content value="tab7">
+          <ToastContainer />
         </Tabs.Content>
       </Tabs>
     </>
