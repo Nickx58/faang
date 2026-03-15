@@ -5,11 +5,12 @@ import Accordion from "./components/Accordion/Accordion";
 import Chips from "./components/Chips/Chips";
 import Quiz from "./components/Quiz/Quiz";
 import TrafficLight from "./components/TrafficLight/TrafficLight";
-import ToastContainer from "./components/Toast/Toast";
+import ToastExample from "./components/Toast/ToastExample";
+import { ToastProvider } from "./components/Toast/ToastProvider";
 
 function App() {
   return (
-    <>
+    <ToastProvider>
       <Tabs defaultValue="tab1">
         <Tabs.List>
           <Tabs.Trigger value="tab1">Todo</Tabs.Trigger>
@@ -39,10 +40,10 @@ function App() {
           <TrafficLight />
         </Tabs.Content>
         <Tabs.Content value="tab7">
-          <ToastContainer />
+          <ToastExample />
         </Tabs.Content>
       </Tabs>
-    </>
+    </ToastProvider>
   );
 }
 
