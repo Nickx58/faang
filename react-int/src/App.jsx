@@ -7,6 +7,7 @@ import Quiz from "./components/Quiz/Quiz";
 import TrafficLight from "./components/TrafficLight/TrafficLight";
 import ToastExample from "./components/Toast/ToastExample";
 import PinItems from "./components/PinItems/PinItems";
+import OTP from "./components/OTP/OTP";
 import { ToastProvider } from "./components/Toast/ToastProvider";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Tabs.Trigger value="tab6">Traffic Light</Tabs.Trigger>
           <Tabs.Trigger value="tab7">Toast</Tabs.Trigger>
           <Tabs.Trigger value="tab8">Pin Items</Tabs.Trigger>
+          <Tabs.Trigger value="tab9">OTP</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="tab1">
           <Todo />
@@ -46,6 +48,9 @@ function App() {
         </Tabs.Content>
         <Tabs.Content value="tab8">
           <PinItems />
+        </Tabs.Content>
+        <Tabs.Content value="tab9">
+          <OTP />
         </Tabs.Content>
       </Tabs>
     </ToastProvider>
