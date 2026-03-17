@@ -8,6 +8,7 @@ import TrafficLight from "./components/TrafficLight/TrafficLight";
 import ToastExample from "./components/Toast/ToastExample";
 import PinItems from "./components/PinItems/PinItems";
 import OTP from "./components/OTP/OTP";
+import SearchInput from "./components/SearchInput/SearchInput";
 import { ToastProvider } from "./components/Toast/ToastProvider";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Tabs.Trigger value="tab7">Toast</Tabs.Trigger>
           <Tabs.Trigger value="tab8">Pin Items</Tabs.Trigger>
           <Tabs.Trigger value="tab9">OTP</Tabs.Trigger>
+          <Tabs.Trigger value="tab10">Search Input</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="tab1">
           <Todo />
@@ -51,6 +53,9 @@ function App() {
         </Tabs.Content>
         <Tabs.Content value="tab9">
           <OTP />
+        </Tabs.Content>
+        <Tabs.Content value="tab10">
+          <SearchInput />
         </Tabs.Content>
       </Tabs>
     </ToastProvider>
