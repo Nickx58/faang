@@ -10,6 +10,7 @@ import PinItems from "./components/PinItems/PinItems";
 import OTP from "./components/OTP/OTP";
 import SearchInput from "./components/SearchInput/SearchInput";
 import { ToastProvider } from "./components/Toast/ToastProvider";
+import TabForm from "./components/TabForm/TabForm";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Tabs.Trigger value="tab8">Pin Items</Tabs.Trigger>
           <Tabs.Trigger value="tab9">OTP</Tabs.Trigger>
           <Tabs.Trigger value="tab10">Search Input</Tabs.Trigger>
+          <Tabs.Trigger value="tab_11">Tab Form</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="tab1">
           <Todo />
@@ -56,6 +58,9 @@ function App() {
         </Tabs.Content>
         <Tabs.Content value="tab10">
           <SearchInput />
+        </Tabs.Content>
+        <Tabs.Content value="tab_11">
+          <TabForm />
         </Tabs.Content>
       </Tabs>
     </ToastProvider>
