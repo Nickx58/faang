@@ -59,3 +59,16 @@ export const defaultTask = [
     text: "Learn React",
   },
 ];
+
+export const pint_items = [
+  { id: 1, text: "Buy groceries", pinned: false },
+  { id: 2, text: "Call Alice", pinned: false },
+  { id: 3, text: "Meeting with Bob", pinned: false },
+  { id: 4, text: "Pay electricity bill", pinned: false },
+  { id: 5, text: "Read a book", pinned: false },
+  { id: 6, text: "Go for a walk", pinned: false },
+  { id: 7, text: "Fix bug #234", pinned: false },
+  { id: 8, text: "Review pull requests", pinned: false },
+];
+
+export const OTP_DIGITS = 5;

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { OTP_DIGITS } from "../constants";
 import "./otp.css";
 
-const OTP_DIGITS = 5;
 function OTP() {
   const [inputState, setInputState] = useState(new Array(OTP_DIGITS).fill(""));
   const refArrays = useRef([]);
