@@ -35,3 +35,41 @@ public:
         return res;
     }
 };
+
+class Solution
+{
+public:
+    vector<int> firstNegInt(vector<int> &arr, int k)
+    {
+        // code here
+        deque<int> q;
+        vector<int> res;
+        int i = 0;
+        for (int j = 0; j < arr.size(); j++)
+        {
+            if (arr[j] < 0)
+            {
+                q.push_back(arr[j]);
+            }
+
+            if (j - i + 1 == k)
+            {
+                if (!q.empty())
+                {
+                    res.push_back(q.front());
+                }
+                else
+                {
+                    res.push_back(0);
+                }
+
+                if (arr[i] < 0 && !q.empty())
+                {
+                    q.pop_front();
+                }
+                i++;
+            }
+        }
+        return res;
+    }
+};
