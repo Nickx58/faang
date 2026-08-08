@@ -118,3 +118,67 @@ With `DISTINCT`
 | SELECT   | Retrieve data from a table |
 | FROM     | Specify the table to query |
 | DISTINCT | Return only unique values  |
+
+## COUNT
+
+Used to count rows or values.
+
+### Examples
+
+Count all rows:
+
+```sql
+SELECT COUNT(*)
+FROM employees;
+```
+
+Count values in a specific column:
+
+```sql
+SELECT COUNT(name)
+FROM employees;
+```
+
+> `COUNT(column)` does not count `NULL` values.
+
+---
+
+## COUNT with DISTINCT
+
+Used to count the number of **unique values** in a column.
+
+### Syntax
+
+```sql
+SELECT COUNT(DISTINCT column_name)
+FROM table_name;
+```
+
+### Example
+
+```sql
+SELECT COUNT(DISTINCT year_hired)
+FROM employees;
+```
+
+This returns the number of **unique hiring years**.
+
+### 🧠 Remember
+
+```sql
+COUNT(*)
+```
+
+→ Count all rows
+
+```sql
+COUNT(column)
+```
+
+→ Count non-NULL values
+
+```sql
+COUNT(DISTINCT column)
+```
+
+→ Count unique, non-NULL values
